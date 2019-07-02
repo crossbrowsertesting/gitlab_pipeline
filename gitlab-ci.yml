@@ -1,0 +1,17 @@
+
+
+image: "python:3.5"
+
+
+
+before_script:
+    - chmod u+x install_dependencies.sh
+    - ./install_dependencies.sh
+   
+variables:
+  UserName: "Your_UserName"
+  AuthKey: "Your_Authkey"
+
+run_test:
+    script:
+        - python BasicPython.py
