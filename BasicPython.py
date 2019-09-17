@@ -22,8 +22,8 @@ class BasicTest(unittest.TestCase):
 
         # Put your username and authey below
         # You can find your authkey at crossbrowsertesting.com/account
-        self.username = os.getenv('UserName')
-        self.authkey  = os.getenv('AuthKey')
+        self.username = os.getenv('CBT_USERNAME')
+        self.authkey  = os.getenv('CBT_AUTHKEY')
 
         self.api_session = requests.Session()
         self.api_session.auth = (self.username,self.authkey)
