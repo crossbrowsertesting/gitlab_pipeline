@@ -1,17 +1,11 @@
+image: "python:3.7"
 
-
-image: "python:3.5"
-
-
-
-before_script:
-    - chmod u+x install_dependencies.sh
-    - ./install_dependencies.sh
-   
 variables:
-  UserName: "Your_UserName"
-  AuthKey: "Your_Authkey"
+  CBT_USERNAME: "YOUR_USERNAME"
+  CBT_AUTHKEY: "YOUR_AUTHKEY"
 
 run_test:
     script:
-        - python BasicPython.py
+        - pip install selenium 
+        - pip install requests
+        - python sel_test.py
