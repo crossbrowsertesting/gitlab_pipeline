@@ -8,4 +8,4 @@ run_test:
     script:
         - pip install selenium 
         - pip install requests
-        - python sel_test.py
+        - python BasicPython.py 
